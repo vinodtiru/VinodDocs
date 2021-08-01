@@ -34,3 +34,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  notify:
+    runs-on: ubuntu-latest
+    name: Nofity
+    needs: [build, deploy]
+    steps:
+      - name: Update latest version in realtime database
+        uses: w9jds/firebase-trigger@master
+        with:
+          credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
+          databaseUrl: https://learn-simple-code.firebaseio.com
+          path: version/lastRelease
+
