@@ -37,7 +37,6 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     name: Nofity
-    needs: [build, deploy]
     steps:
       - name: Update latest version in realtime database
         uses: w9jds/firebase-trigger@master
