@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Nofity
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      
       - name: Update latest version in realtime database
         uses: vinodtiru/firebase-trigger@master
         with:
