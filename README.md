@@ -6,6 +6,6 @@ Steps to add a new ppt to doc
 2. Run Alfred command Update PPT
 3. Add just the PPT name and number of slides in .md file
 
-update 6
+update 7
 
 
