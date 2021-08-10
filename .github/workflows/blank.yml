@@ -3,13 +3,13 @@ on: [push]
 jobs:
   notify:
     runs-on: ubuntu-latest
-    name: Nofity
+    name: RunDocs
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
       
-      - name: Update latest version in realtime database
-        uses: vinodtiru/firebase-trigger@V2
+      - name: Update22 latest version in realtime database
+        uses: vinodtiru/firebase-trigger@qa
         with:
           credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
           databaseUrl: https://learn-simple-code.firebaseio.com
