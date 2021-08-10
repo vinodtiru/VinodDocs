@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Update22 latest version in realtime database
-        uses: vinodtiru/firebase-trigger@master
+        uses: vinodtiru/firebase-trigger@latest
         with:
           credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
           databaseUrl: https://learn-simple-code.firebaseio.com
