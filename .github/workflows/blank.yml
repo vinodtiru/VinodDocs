@@ -17,3 +17,4 @@ jobs:
           path: version
           doc: ImsHg08RNhDt4wvJrlBO
           value: '{"make": "audiv2"}'
+          projName: sw
