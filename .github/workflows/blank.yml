@@ -8,7 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       
-      - name: Update22 latest version in realtime database
+      - name: Update-3 latest version in realtime database
         uses: vinodtiru/firebase-trigger@master
         with:
           credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
